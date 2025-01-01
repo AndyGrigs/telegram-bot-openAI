@@ -64,4 +64,4 @@ async def generate_response(message: types.Message):
     await bot.send_message(message.chat.id, reference.response)
 
 if __name__ == "__main__":
-    executor.start_polling(dp, skip_updates=True)
+    executor.start_polling(dp, skip_updates=False)
